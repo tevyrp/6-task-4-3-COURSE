@@ -1,0 +1,13 @@
+public class OrderProcessorRunner {
+    private Order order;
+    private OrderProcessor orderProcessor;
+
+    public OrderProcessorRunner(Order order, OrderProcessor orderProcessor) {
+        this.order = order;
+        this.orderProcessor = orderProcessor;
+    }
+
+    public void run() {
+        orderProcessor.processOrder(order);
+    }
+}
