@@ -1,0 +1,16 @@
+public abstract class OrderProcessor {
+    public final void processOrder(Order order) {
+        confirmOrder(order);
+        packageItems(order);
+        deliverPackage(order);
+    }
+
+    protected abstract void confirmOrder(Order order);
+
+    protected abstract void packageItems(Order order);
+
+    protected abstract void deliverPackage(Order order);
+}
+
+
+
