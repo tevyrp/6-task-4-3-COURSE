@@ -1,0 +1,8 @@
+public interface Order {
+    String getCustomerName();
+    void setCustomerName(String customerName);
+    String getShippingAddress();
+    void setShippingAddress(String shippingAddress);
+    List<String> getOrderItems();
+    void setOrderItems(List<String> orderItems);
+}
