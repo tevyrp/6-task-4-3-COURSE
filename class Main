@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+    
+        Order order = new SimpleOrder("John Doe", "123 Main St, Anytown USA", Arrays.asList("Product 1", "Product 2"));
+
+        OrderProcessor orderProcessor = new SimpleOrderProcessor();
+
+        OrderProcessorRunner orderProcessorRunner = new OrderProcessorRunner(order, orderProcessor);
+        orderProcessorRunner.run();
+    }
+}
